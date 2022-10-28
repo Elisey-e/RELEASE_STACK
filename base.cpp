@@ -28,7 +28,7 @@ int stack_dump(STACK* stack, const char* name, const char* status){
     printf("<STACKDUMP>\n");
     printf("stack \"%s\" (%s) [0x%0x]\n", name, status, (unsigned int) (size_t) stack);
     printf("{\n");
-    printf("\tdata[%d] = %d\n", (int) stack->capacity, (unsigned int) (size_t) stack->data);
+    printf("\tdata[%d] = [0x%0x]\n", (int) stack->capacity, (unsigned int) (size_t) stack->data);
     printf("\t{\n");
     for (size_t i = 0; i < stack->capacity; i++){
         char stared = ' ';
@@ -59,7 +59,7 @@ int stack_logdump(STACK* stack, const char* name, const char* status){
     fprintf(logfile, "<STACKDUMP>\n");
     fprintf(logfile, "stack \"%s\" (%s) [0x%0x]\n", name, status, (unsigned int) (size_t) stack);
     fprintf(logfile, "{\n");
-    fprintf(logfile, "\tdata[%d] = %d\n", (int) stack->capacity, (unsigned int) (size_t) stack->data);
+    fprintf(logfile, "\tdata[%d] = [0x%0x]\n", (int) stack->capacity, (unsigned int) (size_t) stack->data);
     fprintf(logfile, "\t{\n");
     for (size_t i = 0; i < stack->capacity; i++){
         char stared = ' ';

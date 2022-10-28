@@ -1,7 +1,7 @@
 <STACKDUMP>
 stack "stack_main" (ok) [0xffffcbb0]
 {
-	data[32] = 237056
+	data[32] = [0x39e00]
 	{
 	     *	[0] = 0
 	     *	[1] = 1
