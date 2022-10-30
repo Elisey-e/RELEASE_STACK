@@ -21,7 +21,7 @@ int main ()
     Elem_t popping_elem = 0;
     STACK stack_main = {};
     stack_ctor(&stack_main);
-    for (int i = 0; i <= 30; i++){
+    for (int i = 0; i <= 20; i++){
         stack_push(&stack_main, i);
     }
     

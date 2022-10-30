@@ -19,7 +19,6 @@ int stack_decrease(STACK* st){
 
     if (st->size * 4 > st->capacity - 1){
         return ERR_NOT_DECREASED;
-        printf("ts legf\n");
     }
     st->data = (Elem_t*) realloc(st->data, st->capacity / 2 * (sizeof(Elem_t)));
     st->capacity /= 2;
